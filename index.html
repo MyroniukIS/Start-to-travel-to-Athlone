@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesHeaderAndHero.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <nav>
         <input type="checkbox" id="nav-toggle">
-        <div class="logo">STAR<strong>TRAVEL</strong></div>
+        <div class="logo">
+            <img src="./images/rocket.png" alt="" width="30px">
+            STAR<strong>TRAVEL</strong></div>
         <ul class="links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">History</a></li>
@@ -23,12 +26,22 @@
           <div class="line"></div>
           <div class="line"></div>
         </label>
+        <div class="contact-and-shopping-cart-container">
+            <div><a href="#" class="phone-button"><i class="fa-solid fa-phone-volume"></i>Call</a> </div>
+            <div><a href ="#" class="shopping-button">
+                <i class="fa-solid fa-cart-shopping"></i>Shop
+            </a> </div>
+            
+          </div>
       </nav>
+     
+      
     
-      <div class="container">
+      <div class="image-container">
         <img src="./images/athlone-home.jpg" alt="">
-        <!-- <img src="https://picsum.photos/id/559/1000/1000.jpg" alt=""> -->
-        <!-- <img src="https://picsum.photos/id/558/1000/1000.jpg" alt=""> -->
+        
+        <button class="hero-button">TRAVEL TO ATHLONE</button>
+       
       </div>
       <label for="nav-toggle" class="icon-burger">
         <div class="line"></div>
@@ -37,6 +50,8 @@
       </label>
 
 
-    <h1>Start to travel to Athlone</h1>
+    <h1>Explore places of interest</h1>
+     <img src="https://picsum.photos/id/559/1000/1000.jpg" alt="">
+        <img src="https://picsum.photos/id/558/1000/1000.jpg" alt="">
 </body>
 </html>

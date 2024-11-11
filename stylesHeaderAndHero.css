@@ -7,27 +7,60 @@
     --secondary-text-color:#16423C;
 
     --accent-color: #FCDE70;
+
+    --shadow-color: rgba(0, 0, 0, 0.8);
   }
 
 body {
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", "sans-serif";
   }
-  .container {
+  /* HERO image container */
+  .image-container {
     position: relative;
-    margin-top: 100px;
+    margin-top: 140px;
+    width: 100%; 
   }
-  .container img {
+  .image-container img {
     display: block;
     width: 100%;
   }
+  .hero-button {
+    position: absolute; 
+    /* height:60px; */
+    width: 300px;
+    animation: hero-button 1s infinite;
+    top: 85%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    background-color: var(--accent-color); 
+    color: var(--secondary-text-color); 
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+  box-shadow: 0 4px 15px 0 var(--shadow-color);
+    cursor: pointer; 
+  }
+  @keyframes hero-button {
+    0% {background-color: var(--accent-color);}
+    50% {background-color: #008CBA;}
+    100% {background-color: var(--accent-color);}
+  }
+  /* Navigation menu container */
   nav {
     position: fixed;
     z-index: 10;
     left: 0;
     right: 0;
     top: 0;
-    font-family: "Montserrat", "sans-serif";
+    
     height: 100px;
     background-color: var(--primary-brand-color);
     padding: 0 5%;
@@ -41,6 +74,17 @@ body {
     font-size: 24px;
     color: var(--primary-text-color);
   }
+  nav .contact-and-shopping-cart-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 40px; 
+    display: flex;
+    justify-content:flex-end; 
+    background-color: var(--primary-brand-color);
+  }
+
   nav .links {
     float: right;
     padding: 0;
@@ -102,6 +146,7 @@ body {
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
   }
+  /* responsible for width less 768 px */
   @media screen and (max-width: 768px) {
     nav .logo {
       float: none;
@@ -120,7 +165,7 @@ body {
       height: auto;
       flex-direction: column;
       justify-content: space-evenly;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: var(--shadow-color);
       overflow: hidden;
       transition: all 0.5s ease-in-out;
     }
@@ -143,3 +188,4 @@ body {
       opacity: 0;
     }
   }
+  /*  */
