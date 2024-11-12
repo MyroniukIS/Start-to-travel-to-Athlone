@@ -1,0 +1,47 @@
+/* HERO image container */
+.image-container {
+    position: relative;
+    margin-top: 110px; /*for fixed header*/
+    width: 100%; 
+  }
+  .image-container img {
+    display: block;
+    width: 100%;
+  }
+  .hero-button {
+    position: absolute; 
+    height:60px;
+    width: 400px;
+    animation: hero-button 1s infinite;
+    top: 85%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    background-color: var(--accent-color); 
+    color: var(--secondary-text-color); 
+    font-size: 26px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+  box-shadow: 0 4px 15px 0 var(--shadow-color);
+    cursor: pointer; 
+  }
+  @keyframes hero-button {
+    0% {background-color: var(--accent-color);}
+    50% {background-color: #008CBA;}
+    100% {background-color: var(--accent-color);}
+  }
+  /* responsible for width less 768 px */
+  @media screen and (max-width: 768px) {
+    .hero-button {
+        top: 75%;
+        height:50px;
+        width: 300px;
+        font-size: 20px;
+    }
+  }
+  

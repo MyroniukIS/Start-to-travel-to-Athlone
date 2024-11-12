@@ -1,0 +1,25 @@
+:root {
+    --primary-brand-color: #16423C;
+    --secondary-brand-color: #6A9C89;
+    --tertiary-brand-color: #C4DAD2;
+
+    --primary-text-color: #E9EFEC;
+    --secondary-text-color:#16423C;
+
+    --accent-color: #FCDE70;
+
+    --shadow-color: rgba(0, 0, 0, 0.8);
+  }
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", "sans-serif";
+  }
+  /* *,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+ 
+} */
