@@ -1,0 +1,30 @@
+:root {
+    --primary-brand-color: #16423C;
+    --secondary-brand-color: #6A9C89;
+    --tertiary-brand-color: #C4DAD2;
+
+    --primary-text-color: #E9EFEC;
+    --secondary-text-color:#16423C;
+
+    --accent-color: #FCDE70;
+
+    --shadow-color: rgba(0, 0, 0, 0.8);
+  }
+   /* PLACES OF INTEREST container */
+   /* --------------------- copy to history and other pages with margin top.... */
+.main-section-wrapper {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: var(--primary-brand-color);
+    /* background-color: var(--tertiary-brand-color); */
+    margin-bottom: 10px;
+    
+}
+.main-section-header {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+/* --------------------- copy to history and other pages with margin top.... */

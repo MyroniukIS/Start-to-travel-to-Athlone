@@ -16,6 +16,7 @@
     position: relative;
     margin-top: 110px; /*for fixed header*/
     width: 100%; 
+    margin-bottom: 10px;
   }
   .image-container img {
     display: block;

@@ -13,6 +13,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "Montserrat", "sans-serif";
+    font-family: "Merriweather", serif;
     overflow-x:hidden;
+    letter-spacing: 1px;
   }
