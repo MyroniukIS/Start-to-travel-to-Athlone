@@ -17,7 +17,7 @@ body {
     overflow-x:hidden;
     letter-spacing: 1px;
   }
-  h1,h2 {
+  h1,h2,h3 {
     margin: 0;
     padding: 0;
   }

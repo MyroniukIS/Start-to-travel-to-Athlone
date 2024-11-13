@@ -1,0 +1,69 @@
+:root {
+    --primary-brand-color: #16423C;
+    --secondary-brand-color: #6A9C89;
+    --tertiary-brand-color: #C4DAD2;
+
+    --primary-text-color: #E9EFEC;
+    --secondary-text-color:#16423C;
+
+    --accent-color: #FCDE70;
+
+    --shadow-color: rgba(0, 0, 0, 0.8);
+  }
+  .history-main-container {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(182, 250, 250); */
+  }
+  .history-main-container p {
+    margin: 0;
+  }
+  .history-main-container img {
+    margin-bottom: 10px;
+  }
+  .history-first-header {
+    font-size: 28px;
+    font-weight: 800px;
+    margin: 0 0 10px 0;
+  }
+  .history-second-header {
+    font-size: 20px;
+    font-weight: 800px;
+    margin-bottom: 15px;
+  }
+  .history-main-container div:last-child {
+    margin-bottom: 20px;
+}
+  .history-card-odd, .history-card-even {
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+
+  .history-card-odd {
+    background-color: var(--secondary-brand-color);
+  }
+  .history-card-even {
+    background-color: var(--tertiary-brand-color);
+  }
+  .card-design-dots {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+  }
+  .card-dot {
+    height: 20px;
+    width: 20px;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* responsible for width less 768 px */
+@media screen and (max-width: 768px) {}
+
+/* responsible for width less 414 px */
+@media screen and (max-width: 414px) {}
