@@ -23,8 +23,6 @@ body {
   }
 
   /* For Main Section Comtainer - general styles for all pages */
-
-  /* !!!!!!!!!!!!!!!!!!!! change margin top.... for additional pages */
   .main-section-wrapper {
     padding: 10px;
     max-width: 800px;
@@ -32,7 +30,10 @@ body {
     font-size: 14px;
     color: var(--primary-brand-color);
     margin-bottom: 10px;
-    
+}
+/* change margin top for additional pages */
+.main-section-wrapper-additional-page{
+  margin-top: 110px;
 }
 .main-section-header {
     font-size: 40px;
