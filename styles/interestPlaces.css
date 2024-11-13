@@ -11,20 +11,72 @@
     --shadow-color: rgba(0, 0, 0, 0.8);
   }
    /* PLACES OF INTEREST container */
-   /* --------------------- copy to history and other pages with margin top.... */
-.main-section-wrapper {
-    padding: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 14px;
-    color: var(--primary-brand-color);
-    /* background-color: var(--tertiary-brand-color); */
+ .interest-place-card-wrapper-odd {
+    display:flex;
+    padding: 15px 20px;
     margin-bottom: 10px;
+    background-color: var(--secondary-brand-color);
+    border-radius: 10px;
+}
+.interest-place-card-wrapper-even {
+    display:flex;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: var(--tertiary-brand-color);
+    border-radius: 10px;
+}
+.interest-place-text-container {
+    margin-left: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.interest-place-card-header{
+    font-size: 28px;
+    font-weight: 800px;
+    margin-bottom: 30px;
+}
+.interest-place-card-text {
+    margin: 0 0 15px 0;
+}
+
+ /* responsible for width less 768 px */
+@media screen and (max-width: 768px) {
+    .main-section-wrapper .card-item:last-child {
+        margin-bottom: 0;
+    }
     
+    .interest-place-card-wrapper-odd {
+        flex-direction: column;
+        align-items: center;
+    }
+    .interest-place-text-container {
+        margin-left: 0;
+    }
+    .interest-place-card-header {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .interest-place-card-text {
+        font-size: 13px;
+    }
+    .interest-place-card-wrapper-even {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
-.main-section-header {
-    font-size: 40px;
-    font-weight: 800;
-    text-align: center;
-}
-/* --------------------- copy to history and other pages with margin top.... */
+ /* responsible for width less 414 px */
+ @media screen and (max-width: 414px) {
+    .interest-place-card-header {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .interest-place-card-text {
+        font-size: 11px;
+    }
+    .main-section-wrapper .card-item img {
+        width: 150px;
+    }
+ }

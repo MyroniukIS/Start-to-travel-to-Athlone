@@ -150,4 +150,14 @@
       opacity: 0;
     }
   }
+
+  /* responsible for width less 414 px */
+  @media screen and (max-width: 414px) {
+    nav .logo {
+      font-size: 18px;
+    } 
+    nav .logo img {
+      width: 20px;
+    }
+  }
   
