@@ -18,13 +18,13 @@
     padding:10px;
 }
 .contacts-info {
-    max-width: 500px;
+    max-width: 450px;
 }
 .google-map {
-    max-width: 300px;
+    max-width: 400px;
 }
 .contacts-info h2 {
-    font-size: 24px;
+    font-size: 22px;
 }
 .contacts-info span {
     font-weight:bold;
