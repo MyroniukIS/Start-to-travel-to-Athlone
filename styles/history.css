@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: rgb(182, 250, 250); */
   }
   .history-main-container p {
     margin: 0;
@@ -33,9 +32,6 @@
     font-weight: 800px;
     margin-bottom: 15px;
   }
-  .history-main-container div:last-child {
-    margin-bottom: 20px;
-}
   .history-card-odd, .history-card-even {
     margin-bottom: 10px;
     padding: 15px 20px;
@@ -61,9 +57,55 @@
     border-radius: 50%;
     display: inline-block;
   }
+  .history-card-button {
+    margin-top: 20px;
+  }
 
   /* responsible for width less 768 px */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .history-first-header {
+    font-size: 24px;
+  }
+  .history-second-header {
+    font-size: 16px;
+    text-align: center;
+  }
+  .history-main-container p {
+    font-size: 13px;
+  }
+  .history-main-img {
+    width: 350px;
+  }
+  .card-design-dots {
+    max-width: 350px;
+    justify-content: space-around;
+  }
+  .card-dot {
+    height: 16px;
+    width: 16px;
+  }
+}
 
 /* responsible for width less 414 px */
-@media screen and (max-width: 414px) {}
+@media screen and (max-width: 414px) {
+  .history-first-header {
+    font-size: 18px;
+  }
+  .history-second-header {
+    font-size: 14px;
+    text-align: center;
+  }
+  .history-main-container p {
+    font-size: 11px;
+  }
+  .history-main-img {
+    width: 250px;
+  }
+  .card-design-dots {
+    max-width: 250px;
+  }
+  .card-dot {
+    height: 14px;
+    width: 14px;
+  }
+}
