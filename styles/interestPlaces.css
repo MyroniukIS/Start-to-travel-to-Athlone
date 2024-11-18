@@ -38,9 +38,27 @@
     margin-bottom: 30px;
 }
 .interest-place-card-text {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
 }
-
+.interest-place-link-to-learn-more {
+    display: block;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-text-color);
+  }
+  .interest-place-link-to-learn-more:hover {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  .interest-place-link-to-learn-more--even {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    border: 1px solid var(--secondary-text-color);
+  }
+  
  /* responsible for width less 768 px */
 @media screen and (max-width: 768px) {
     .main-section-wrapper .card-item:last-child {

@@ -47,7 +47,7 @@
 }
 
 .card-overlay-items {
-  padding: 10px 20px;
+  padding: 5px 5px;
 }
 
 .card-overlay-cart {
@@ -58,6 +58,19 @@
 }
 .cards-travel-btn-container{
   display: none;
+}
+
+.card-overlay-link-to-learn-more {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-text-color);
+}
+.card-overlay-link-to-learn-more:hover{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .card-container:hover .card-overlay {
