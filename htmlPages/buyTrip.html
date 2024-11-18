@@ -54,55 +54,87 @@
 
       <!-- MAIN SECTION -->
       <main class="main-section-wrapper main-section-wrapper-additional-page">
-        <h1 class="main-section-header">Buy a trip</h1>
+        <h1 class="main-section-header">Pay and travel</h1>
+        <div>
+          <h3>Your trip will probably consist of:</h3>
+          <ul>
+            <li>travel tickets</li>
+            <li>hotel</li>
+            <li>number of nights</li>
+            <li>restaurants</li>
+            <li>travel excursion tour</li>
+            <li>shops</li>
+          </ul>
+          <p>Please, talk with our great <img src="../images/icons/rocket.png" alt="logo image rocket" width="12px">STAR<strong>TRAVEL</strong> consultants before you pay for your trip.</p>
+        </div>
+        
 
         <!-- ** BUY A TRIP ** -->
         
         <div class="responsive-container-block big-container">
+
+
           <div class="color-box">
           </div>
           <div class="responsive-container-block container">
             <form class="form-box">
+
+
               <div class="container-block form-wrapper">
                 <h2 class="text-blk contactus-head">
                   Payment details
                 </h2>
+                <p class="text-blk contactus-subhead">
+                  Please, fill your details below
+                </p>
 
-            
-            <!-- input CARD HOLDER -->
             <div class="responsive-container-block">
+
+            <!-- input CARD HOLDER -->
               <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                 <p class="text-blk input-title">
                   CARD HOLDER <em>&#x2a</em> 
                 </p>
                 <input class="input" id="ijowk" minlength="5" type="text" required="" name="CardHolder" placeholder="Please enter card holder name...">
+                <span>Requested format: Name Surname [as on your bank card]</span>
+              </div>
+              
+              <!-- input TOTAL -->
+              <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                <p class="text-blk input-title">
+                  TOTAL <em>&#x2a</em> 
+                </p>
+                <input class="input" id="ijowk" minlength="3" type="number" required="" name="TOTAL" placeholder="Please enter Total sum...">
               </div>
 
+              
               <!-- input CARD NUMBER -->
-            <div class="responsive-container-block">
               <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                 <p class="text-blk input-title">
                   CARD NUMBER <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk" minlength="16" type="number" required="" name="CardNumber" placeholder="Please enter card number...">
-              </div>
-
-              <!-- input EXPIRES -->
-            <div class="responsive-container-block">
-              <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
-                <p class="text-blk input-title">
-                  EXPIRES <em>&#x2a</em> 
-                </p>
-                <input class="input" id="ijowk" minlength="4" type="number" required="" name="Expires" placeholder="Please enter expire date...">
+                <input class="input" id="ijowk"  min="0000000000000000" max="9999999999999999" type="number" required="" name="CardNumber" placeholder="Please enter card number..."  >
+                <span>Requested format: 0000 0000 0000 0000 [on the front of your bank card] </span>
               </div>
 
                <!-- input CVC -->
-            <div class="responsive-container-block">
               <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                 <p class="text-blk input-title">
                   CVC <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk" minlength="3" type="number" required="" name="CVC" placeholder="Please enter CVC...">
+                <input class="input" id="ijowk" minlength="3" type="password" required="" name="CVC" placeholder="Please enter CVC...">
+                <span>Requested format: 000 [on the back of your bank card] </span>
+              </div>
+
+              <!-- input EXPIRATION -->
+              <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                <p class="text-blk input-title">
+                  EXPIRATION <em>&#x2a</em> 
+                </p>
+                <input class="input" id="ijowk" minlength="4" type="date" required="" name="Expires" placeholder="Please enter expire date...">
+                <span>Requested format: dd/mm/yyyy </span>
+              </div>
+             
               </div>
 
 
@@ -114,7 +146,12 @@
 
           </div>
           </form>
+
+
           </div>
+
+
+
           </div>
 
 

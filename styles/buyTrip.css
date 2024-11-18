@@ -30,7 +30,7 @@
     display: block;
   }
   .responsive-container-block {
-    min-height: 75px;
+    min-height: 55px;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -107,10 +107,10 @@
    .text-blk {
     margin: 0;
   }
-   em {
+   .responsive-cell-block em {
     color: red;
   }
-   span {
+   .responsive-cell-block span {
     color: grey;
     font-size: 8px;
   }
@@ -170,23 +170,9 @@
     margin: 0px 0px 5px 0px;
     color: grey;
   }
-
-
-
-
-
-
   .responsive-container-block ::placeholder { 
     color: #dadada;
   }
-
-
-
-
-
-
-
-
    .color-box {
     position: absolute;
     width: 100%;
@@ -261,7 +247,7 @@
      .text-blk {
         font-size: 12px;
     }
-     span {
+    .responsive-cell-block span {
         font-size: 7px;
     }
      .input {
