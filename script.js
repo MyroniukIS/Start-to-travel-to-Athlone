@@ -17,3 +17,4 @@ additionalTravelButtons.forEach(button => {
         window.location.href = "../htmlPages/buyTrip.html";
     };
 });
+

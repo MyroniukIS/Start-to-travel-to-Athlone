@@ -77,7 +77,7 @@
           <div class="color-box">
           </div>
           <div class="responsive-container-block container">
-            <form class="form-box">
+            <form id="buy-a-trip-form" class="form-box" onsubmit="payment()">
 
 
               <div class="container-block form-wrapper">
@@ -95,7 +95,7 @@
                 <p class="text-blk input-title">
                   CARD HOLDER <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk" minlength="5" type="text" required="" name="CardHolder" placeholder="Please enter card holder name...">
+                <input class="input" id="CardHolder" minlength="5" type="text" required="" name="CardHolder" placeholder="Please enter card holder name...">
                 <span>Requested format: Name Surname [as on your bank card]</span>
               </div>
               
@@ -104,7 +104,7 @@
                 <p class="text-blk input-title">
                   TOTAL <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk" minlength="3" type="number" required="" name="TOTAL" placeholder="Please enter Total sum...">
+                <input class="input" id="TOTAL" minlength="3" type="number" required="" name="TOTAL" placeholder="Please enter Total sum...">
               </div>
 
               
@@ -113,7 +113,7 @@
                 <p class="text-blk input-title">
                   CARD NUMBER <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk"  min="0000000000000000" max="9999999999999999" type="number" required="" name="CardNumber" placeholder="Please enter card number..."  >
+                <input class="input" id="CardNumber"  min="0000000000000000" max="9999999999999999" type="number" required="" name="CardNumber" placeholder="Please enter card number..."  >
                 <span>Requested format: 0000 0000 0000 0000 [on the front of your bank card] </span>
               </div>
 
@@ -122,7 +122,7 @@
                 <p class="text-blk input-title">
                   CVC <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk" minlength="3" type="password" required="" name="CVC" placeholder="Please enter CVC...">
+                <input class="input" id="CVC" minlength="3" type="password" required="" name="CVC" placeholder="Please enter CVC...">
                 <span>Requested format: 000 [on the back of your bank card] </span>
               </div>
 
@@ -131,7 +131,7 @@
                 <p class="text-blk input-title">
                   EXPIRATION <em>&#x2a</em> 
                 </p>
-                <input class="input" id="ijowk" minlength="4" type="date" required="" name="Expires" placeholder="Please enter expire date...">
+                <input class="input" id="Expires" minlength="4" type="date" required="" name="Expires" placeholder="Please enter expire date...">
                 <span>Requested format: dd/mm/yyyy </span>
               </div>
              
@@ -192,6 +192,7 @@
         </div>
         </footer>
       
+        <script src="../scripts/buyTripFormPayment.js"></script>
         <script src="../script.js"></script>
 
 </body>
