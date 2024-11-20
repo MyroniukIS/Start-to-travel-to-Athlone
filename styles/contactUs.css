@@ -113,11 +113,20 @@
   }
   .contact_us_2 .text-blk.contactus-subhead {
     color: grey;
-    margin-top: 0px;
-    margin-right: 0px;
+    margin: 0px;
+    /* margin-right: 0px;
     margin-bottom: 50px;
-    margin-left: 0px;
+    margin-left: 0px; */
   } 
+  .contact_us_2 .container-error-message {
+    height: 30px;
+    margin:0 0 20px 0;
+    padding: 7px;
+  }
+  .contact_us_2 .error {
+    color: red;
+    background-color: rgba(233, 123, 123, 0.4);
+  }
   .contact_us_2 .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
     margin: 0px 0px 26px 0px;
     min-height: 50px;
@@ -126,16 +135,18 @@
     width: 96%;
     height: 50px;
     padding: 1px 15px;
-    border: 2px solid #eeeeee;
     border-image-source: initial;
     border-image-slice: initial;
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;
+    border: 2px solid #eeeeee;
+    
     font-size: 14px;
     color: var(--secondary-text-color);
     border-radius: 4px;
   }
+   
   .contact_us_2 .textinput {
     width: 98%;
     min-height: 150px;

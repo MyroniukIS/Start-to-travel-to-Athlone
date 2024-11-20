@@ -2,8 +2,6 @@
 
 const travelButtons = document.querySelectorAll("#travel-btn-main");
 const additionalTravelButtons = document.querySelectorAll("#travel-btn");
-// console.log(travelButtons);
-
 
 travelButtons.forEach(button => {
     button.onclick = function () {

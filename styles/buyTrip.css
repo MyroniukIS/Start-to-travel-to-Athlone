@@ -68,11 +68,20 @@
   }
    .text-blk.contactus-subhead {
     color: grey;
-    margin-top: 0px;
-    margin-right: 0px;
+    margin: 0px;
+    /* margin-right: 0px;
     margin-bottom: 50px;
-    margin-left: 0px;
+    margin-left: 0px; */
   } 
+  .container-error-message {
+    height: 30px;
+    margin:0 0 20px 0;
+    padding: 7px;
+  }
+  .error {
+    color: red;
+    background-color: rgba(233, 123, 123, 0.4);
+  }
   .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
     margin: 0px 0px 26px 0px;
     min-height: 50px;

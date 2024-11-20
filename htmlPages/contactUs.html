@@ -81,13 +81,16 @@
 
   <!--  TO SEND EMAIL -->
                 <!-- <form id="contact-us-form" class="form-box" method="post" action="../scripts/send.php" > -->
-                  <form id="contact-us-form" class="form-box" onsubmit="validateForm()">
+                  <form id="contact-us-form" name="contact-us-form" class="form-box" onsubmit="validateForm()">
                   <div class="container-block form-wrapper">
                     <p class="text-blk contactus-head">
                       Get in Touch
                     </p>
                     <p class="text-blk contactus-subhead">
                       Please, contact us
+                    </p>
+                    <p class="container-error-message">
+                      
                     </p>
 
                     
@@ -97,7 +100,9 @@
                         <p class="text-blk input-title">
                           FIRST NAME <em>&#x2a</em> 
                         </p>
-                        <input class="input" id="FirstName" minlength="2" type="text" required="" name="FirstName" placeholder="Please enter first name...">
+                        <input class="input" id="FirstName" minlength="2" type="text" required="" name="FirstName" placeholder="Please enter first name..." oninput="allLetterFN()">
+                        
+                        <span>Requested format: Name</span>
                       </div>
 
                       <!-- input last name -->
@@ -105,7 +110,9 @@
                         <p class="text-blk input-title">
                           LAST NAME 
                         </p>
-                        <input class="input" id="LastName" minlength="2" type="text" name="LastName" placeholder="Please enter last name...">
+                        <input class="input" id="LastName" minlength="2" type="text" name="LastName" placeholder="Please enter last name..." oninput="allLetterLN()">
+                        
+                        <span>Requested format: Surname</span>
                       </div>
 
                       <!-- input email -->
@@ -114,6 +121,7 @@
                           EMAIL <em>&#x2a</em>
                         </p>
                         <input class="input" id="Email" type="email" minlength="5" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  name="Email" placeholder="Please enter email...">
+                        
                         <span>Requested format: username@mail.com</span>
                       </div>
 
@@ -123,6 +131,7 @@
                           PHONE NUMBER
                         </p>
                         <input class="input" minlength="10" id="PhoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="PhoneNumber" placeholder="Please enter phone number...">
+                        
                         <span>Requested format: 08[3-9]-XXX-XXXX, for ex. 577-777-7777</span>  
                       </div>
 
@@ -132,12 +141,13 @@
                           YOUR MESSAGE <em>&#x2a</em>
                         </p>
                         <textarea class="textinput" id="Message" name="Message" minlength="10" rows="7" required="" placeholder="Please enter query..."></textarea>
+                        
                       </div>
 
                     </div>
 
 
-                    <button id="contact-us-form-submit-btn" class="submit-btn">
+                    <button  id="contact-us-form-submit-btn" class="submit-btn">
                       SUBMIT
                     </button>
                   </div>
@@ -186,8 +196,8 @@
         </div>
         </footer>
         
-        <script src="../scripts/contactFormValidationAndSending.js"></script>
-        <script src="../script.js"></script>
+        <script src="../scripts/contactFormValidationAndSending.js" defer></script>
+        <script src="../script.js" defer></script>
 
 </body>
 </html>
