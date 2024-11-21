@@ -2,18 +2,40 @@
 
 /*  CHANGE THE FORMAT CARD NUMBER*/
 var number = document.forms["buy-a-trip-form"]["CardNumber"];
-// var number = document.getElementById("#CardHolder");
+var errorBox = document.querySelector(".container-error-message");
+errorBox.innerText = "";
+errorBox.className = 'container-error-message';
+
 
     number.addEventListener('input', function(e) {
         this.value = numberAutoFormat();
-    
+        errorBox.innerText = "";
+        errorBox.className = 'container-error-message';
         //show error when is different of 16 numbers and 3 white space
         // let error = this.value.length !== 19;
         // let alert2 = document.getElementById('alert-2');
         // showError(alert2, error);
-    
+
+        
         number.textContent = this.value;
+        
     });
+
+    // number.addEventListener('onblur', function(e) {
+
+    //     if(this.value.length == 19) {
+    //         number.textContent = this.value;
+    //             return true;
+    //     }
+    //     else {
+    //         errorBox.innerText ='Please input valid card number.';
+    // errorBox.className = 'error';
+    // setTimeout(3000);
+    // return false;
+    //     }
+    // } );
+    
+    
 
 
 function numberAutoFormat() {
@@ -36,7 +58,7 @@ function numberAutoFormat() {
         // add a white space after 4 digits
         return parts.join(' ');
     } else {
-        console.log(valueNumber.length);
+        // console.log(valueNumber.length);
         return valueNumber;
     }
 };

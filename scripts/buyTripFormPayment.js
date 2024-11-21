@@ -1,4 +1,7 @@
 'use strict';
+var errorBox = document.querySelector(".container-error-message");
+errorBox.innerText = "";
+errorBox.className = 'container-error-message';
 
 function payment (){
     var cardHolder = document.forms["buy-a-trip-form"]["CardHolder"].value;
@@ -11,6 +14,12 @@ function payment (){
     
     var error = "";
 
+    if (cardNumber.length !== 19) {
+       
+        error += "Please enter your valid card number.\n";
+        
+    }
+
     if (cardHolder == "") {
         error += "Please enter your card holder name.\n";
     }
@@ -18,9 +27,7 @@ function payment (){
     if (total == "") {
         error += "Please enter your total cost of the trip.\n";
     }
-    if (cardNumber.length !== 19) {
-        error += "Please enter your card number.\n";
-    }
+    
     if (cvc == "") {
         error += "Please enter your CVC.\n";
     }
@@ -35,42 +42,51 @@ function payment (){
         return false;
     }
 
-    alert(`Thank you!\n ✅The payment is successful!\n We will contact you soon about the next step!🤩 `);
+
+    // errorBox.innerText = "";
+    // errorBox.className = 'container-error-message';
+    alert(`Thank you, ${cardHolder.trim()}!\n ✅The payment is successful!\n We will contact you soon about the next step!🤩 `);
 
 }
 
-// errorBox.innerText = error;
-// errorBox.className = 'error';
-// setTimeout(3000);
-
 function allLetterCH() { 
-    var inputtxt = document.forms["buy-a-trip-form"]["CardHolder"];
-  var letters = /^[A-Za-z_ ]+$/;
-//   ^[a-zA-Z0-9_]*$
+    errorBox.innerText = "";
+    errorBox.className = 'container-error-message';
 
-  if(inputtxt.value.match(letters)) {
-//   alert('Your name have accepted : you can try another');
-  return true;
+    var inputtxt = document.forms["buy-a-trip-form"]["CardHolder"];
+    var letters = /^[A-Za-z_ ]+$/;
+    //   ^[a-zA-Z0-9_]*$
+
+  if (inputtxt.value.match(letters)) {
+    return true;
   }
-  else
-  {
-  alert('Please input alphabet characters only');
-  return false;
+  else {
+    errorBox.innerText ='Please input alphabet characters only';
+    errorBox.className = 'error';
+    setTimeout(3000);
+    return false;
   }
+
+  
   }
 
   function allNumbers() { 
+    errorBox.innerText = "";
+    errorBox.className = 'container-error-message';
+
     var inputtxt = document.forms["buy-a-trip-form"]["OrderNumber"];
-  var numbers = /^[0-9_ ]+$/;
+    var numbers = /^[0-9_ ]+$/;
 
-  if(inputtxt.value.match(numbers)) {
-  return true;
-  }
-  else
-  {
-  alert('Please input numbers only');
-  return false;
-  }
+    if(inputtxt.value.match(numbers)) {
+        return true;
+    }
+    else
+    {
+        errorBox.innerText ='Please input numbers only';
+        errorBox.className = 'error';
+        setTimeout(3000);
+        return false;
+    }
   }
 
-
+  

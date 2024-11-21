@@ -87,9 +87,9 @@
                 <p class="text-blk contactus-subhead">
                   Please, fill your details below
                 </p>
-                <p class="container-error-message">
+                <div class="container-error-message">
                       
-                </p>
+                </div>
 
             <div class="responsive-container-block">
 
@@ -107,7 +107,7 @@
                 <p class="text-blk input-title">
                   TOTAL <em>&#x2a</em> 
                 </p>
-                <input class="input" id="TOTAL" inputmode="numeric"  minlength="3" type="text" required="" name="TOTAL" placeholder="Please enter Total sum...">            
+                <input class="input" id="TOTAL" inputmode="numeric"  minlength="3" type="text" required="" name="TOTAL" placeholder="Please enter Total sum..." oninput="allNumbers()">            
               
               </div>
 
@@ -117,7 +117,7 @@
                 <p class="text-blk input-title">
                   CARD NUMBER <em>&#x2a</em> 
                 </p>
-                <input class="input" id="CardNumber"  min="0000000000000000" max="9999999999999999" type="text" required="" name="CardNumber" placeholder="Please enter card number..."  >
+                <input class="input" id="CardNumber"  min="0000000000000000" max="9999999999999999" type="text" required="" name="CardNumber" placeholder="Please enter card number..." >
                 <span>Requested format: 0000 0000 0000 0000 [on the front of your bank card] </span>
               </div>
 

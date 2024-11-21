@@ -17,7 +17,6 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .card-container {
@@ -79,7 +78,7 @@
   background: var(--shadow-color);
   color: var(--primary-text-color);
   
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 
 .card-overlay-items {

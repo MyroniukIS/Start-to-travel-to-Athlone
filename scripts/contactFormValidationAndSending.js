@@ -1,4 +1,7 @@
-// 'use strict';
+'use strict';
+var errorBox = document.querySelector(".container-error-message");
+errorBox.innerText = "";
+errorBox.className = 'container-error-message';
 
 function validateForm() {
     var nameFirst = document.forms["contact-us-form"]["FirstName"].value;
@@ -30,6 +33,8 @@ function validateForm() {
         return false;
     }
 
+    // errorBox.innerText = "";
+    // errorBox.className = 'container-error-message';
     alert(`Thank you, ${nameFirst.trim()} for your message! We will contact you soon!🤩 `);
 }
 
@@ -50,6 +55,9 @@ function validateEmail(email) {
 
 
 function allLetterFN() { 
+    errorBox.innerText = "";
+    errorBox.className = 'container-error-message';
+
         var inputtxt = document.forms["contact-us-form"]["FirstName"];
       var letters = /^[A-Za-z_ ]+$/;
     //   ^[a-zA-Z0-9_]*$
@@ -60,11 +68,17 @@ function allLetterFN() {
       }
       else
       {
-      alert('Please input alphabet characters only');
-      return false;
+      errorBox.innerText ='Please input alphabet characters only';
+    errorBox.className = 'error';
+    setTimeout(3000);
+    return false;
       }
       }
+
 function allLetterLN() { 
+  errorBox.innerText = "";
+  errorBox.className = 'container-error-message';
+
         var inputtxt = document.forms["contact-us-form"]["LastName"];
         var letters = /^[A-Za-z_ ]+$/;
 
@@ -74,8 +88,10 @@ function allLetterLN() {
       }
       else
       {
-      alert('Please input alphabet characters only');
-      return false;
+        errorBox.innerText ='Please input alphabet characters only';
+        errorBox.className = 'error';
+        setTimeout(3000);
+        return false;
       }
       }
 

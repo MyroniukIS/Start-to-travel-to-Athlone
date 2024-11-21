@@ -124,6 +124,9 @@
     padding: 7px;
   }
   .contact_us_2 .error {
+    height: 30px;
+    margin:0 0 20px 0;
+    padding: 7px;
     color: red;
     background-color: rgba(233, 123, 123, 0.4);
   }
